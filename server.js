@@ -12,7 +12,7 @@ const { $where } = require('./src/models/sch');
 app.use(bodyParser.urlencoded({extended: false }));
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb://localhost:27017/logsignup", {
+mongoose.connect("mongodb+srv://Chiragsinghal:CS123@slantcoding.ldjfxtd.mongodb.net/datastore?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(function(){
