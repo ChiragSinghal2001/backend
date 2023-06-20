@@ -11,6 +11,7 @@ const bodyParser = require('body-parser');
 const { $where } = require('./src/models/sch');
 app.use(bodyParser.urlencoded({extended: false }));
 app.use(bodyParser.json());
+app.use(express.json());
 
 mongoose.connect("mongodb+srv://Chiragsinghal:CS123@slantcoding.ldjfxtd.mongodb.net/datastore?retryWrites=true&w=majority", {
   useNewUrlParser: true,
